@@ -20,7 +20,7 @@ echo ' -- $GAVO_ROOT="/var/gavo"'
 echo ' - default data location:'
 echo ' -- $GAVO_INPUTS="$GAVO_ROOT/inputs"'
 echo ''
-echo 'After starting the services, `postgres` and `dachs`,
+echo 'After starting the services, `postgres` and `dachs`,'
 echo 'you should be able to see the web interface on your'
 echo 'host system at "http://localhost".'
 echo '=========================================================='
