@@ -3,8 +3,9 @@ version: '2'
 services:
 
     dachs:
-        container_name: dachs
-        image: chbrandt/dachs:server
+        container_name: myDachs
+        build: ./images/dachs
+        image: dachs:chbrandt
         tty: true
         network_mode: 'bridge'
         ports:
@@ -17,8 +18,9 @@ services:
             - postgres
 
     postgres:
-        container_name: postgres
-        image: chbrandt/dachs:postgres
+        container_name: myPostgres
+        build: ./images/postgres
+        image: postgres:chbrandt
         tty: true
         network_mode: 'bridge'
         volumes:
